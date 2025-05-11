@@ -84,14 +84,18 @@ Monitors the following events:
 
 ## 📁 Project Structure (for contributors)
 
+
 ```text
 0xlogs/
 ├── lib/
-│   ├── index.js        # Main validator exports
-│   ├── process.js      # Process event listeners
-│   ├── validate.js     # Schema/path validation functions
-│   └── types.js        # Config schema definition
-├── index.js            # CreateLog class & export
+│   ├── index.js        # Combines validation utilities and config types
+│   ├── process/
+│   │   ├── index.js    # Handles process-level logging
+│   ├── types/
+│   │   ├── index.js    # Schema definition
+│   ├── functions/
+│   │   ├── index.js    # Config & path validation
+├── index.js            # Main class (CreateLog)
 ```
 
 ---
